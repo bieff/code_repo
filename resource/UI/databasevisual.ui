@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,8">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="new_btn">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font-size:16px;
+	border-radius:4px;
+	border:1px solid lightgray;
+}
+QPushButton:hover {
+	background-color:rgb(72,203,250);
+}
+QPushButton:pressed {
+	background-color:rgb(85,85,255);
+}
+QPushButton:checked {
+	border:1px solid green;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>新建</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/database/images/add.png</normaloff>:/database/images/add.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="delete_btn">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font-size:16px;
+	border-radius:4px;
+	border:1px solid lightgray;
+}
+QPushButton:hover {
+	background-color:rgb(72,203,250);
+}
+QPushButton:pressed {
+	background-color:rgb(85,85,255);
+}
+QPushButton:checked {
+	border:1px solid green;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/database/images/delete.png</normaloff>:/database/images/delete.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="edit_btn">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font-size:16px;
+	border-radius:4px;
+	border:1px solid lightgray;
+}
+QPushButton:hover {
+	background-color:rgb(72,203,250);
+}
+QPushButton:pressed {
+	background-color:rgb(85,85,255);
+}
+QPushButton:checked {
+	border:1px solid green;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>修改</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/database/images/edit.png</normaloff>:/database/images/edit.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="refresh_btn">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font-size:16px;
+	border-radius:4px;
+	border:1px solid lightgray;
+}
+QPushButton:hover {
+	background-color:rgb(72,203,250);
+}
+QPushButton:pressed {
+	background-color:rgb(85,85,255);
+}</string>
+        </property>
+        <property name="text">
+         <string>刷新</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/database/images/refresh.png</normaloff>:/database/images/refresh.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="table_comboBox">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>中药表</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>成分表</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>靶点表</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>通路表</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keyword_lineEdit">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font-size:14px;
+	border-radius:4px;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>请输入关键字</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="search_btn">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font-size:16px;
+	border-radius:15px;
+	border:1px solid gray;
+}
+QPushButton:hover {
+	background-color:rgb(72,203,250);
+}
+QPushButton:pressed {
+	background-color:rgb(85,85,255);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/database/images/search.png</normaloff>:/database/images/search.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTableWidget" name="data_tableWidget">
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../my_images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>new_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>new_data()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>32</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-13</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delete_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>delete_data()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>-20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>edit_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>edit_data()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>176</x>
+     <y>-15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refresh_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>refresh_data()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>14</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>-11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>table_comboBox</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>change_table()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>461</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>468</x>
+     <y>-11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>search_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>condition_search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>726</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>755</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>new_data()</slot>
+  <slot>delete_data()</slot>
+  <slot>edit_data()</slot>
+  <slot>up_data()</slot>
+  <slot>down_data()</slot>
+  <slot>refresh_data()</slot>
+  <slot>change_table()</slot>
+  <slot>condition_search()</slot>
+ </slots>
+</ui>

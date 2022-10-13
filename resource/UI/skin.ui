@@ -1,0 +1,2335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>276</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane#tabWidget{
+	border-top:2px solid #00C2C7CB;
+	background:#002d2f33;
+}
+QTabWidget#tabWidget::tab-bar{
+	alginment:center;
+}
+QTabBar::tab {
+	background: #00000000;
+	border: none;
+	border-bottom-color: #dcdde4;
+	min-width: 10px;
+	margin-right: 20px;
+    padding-left:20px;
+	padding-right:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	color:#686a6e;
+}
+QTabBar::tab:hover {
+	background: #BEDAFA;
+}
+QTabBar::tab:selected {
+	border-color: #F8F7F2;
+	color:black;
+	border-bottom: 2px solid #3c3e42;
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>主题</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <widget class="QPushButton" name="black_btn">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>14</y>
+            <width>90</width>
+            <height>90</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border:none;
+	border-image: url(:/skin/images/black.jpg);
+}
+QPushButton:hover{
+	border:2px double rgb(41,44,50);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="id" stdset="0">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="red_btn">
+          <property name="geometry">
+           <rect>
+            <x>125</x>
+            <y>14</y>
+            <width>90</width>
+            <height>90</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border:none;
+	border-image: url(:/skin/images/red.jpg);
+}
+QPushButton:hover{
+	border:2px double rgb(41,44,50);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="id" stdset="0">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pink_btn">
+          <property name="geometry">
+           <rect>
+            <x>231</x>
+            <y>14</y>
+            <width>90</width>
+            <height>90</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border:none;
+	border-image: url(:/skin/images/pink.jpg);
+}
+QPushButton:hover{
+	border:2px double rgb(41,44,50);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="id" stdset="0">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="black_label">
+          <property name="geometry">
+           <rect>
+            <x>21</x>
+            <y>81</y>
+            <width>90</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: transparent;
+	font: 12pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string> 酷炫黑</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="red_label">
+          <property name="geometry">
+           <rect>
+            <x>126</x>
+            <y>81</y>
+            <width>90</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: transparent;
+	font: 12pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string> 官方红</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pinl_label">
+          <property name="geometry">
+           <rect>
+            <x>231</x>
+            <y>81</y>
+            <width>90</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: transparent;
+	font: 12pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string> 可爱粉</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="black_icon">
+          <property name="geometry">
+           <rect>
+            <x>86</x>
+            <y>81</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:15px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="red_icon">
+          <property name="geometry">
+           <rect>
+            <x>191</x>
+            <y>81</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:15px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pink_icon">
+          <property name="geometry">
+           <rect>
+            <x>296</x>
+            <y>81</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:15px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <widget class="QPushButton" name="blue_btn">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>8</y>
+            <width>90</width>
+            <height>95</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>95</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border:none;
+	border-image: url(:/skin/images/blue.jpg);
+}
+QPushButton:hover{
+	border:2px double rgb(41,44,50);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="id" stdset="0">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="green_btn">
+          <property name="geometry">
+           <rect>
+            <x>125</x>
+            <y>8</y>
+            <width>90</width>
+            <height>95</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>95</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border:none;
+	border-image: url(:/skin/images/green.jpg);
+}
+QPushButton:hover{
+	border:2px double rgb(41,44,50);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="id" stdset="0">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gold_btn">
+          <property name="geometry">
+           <rect>
+            <x>231</x>
+            <y>8</y>
+            <width>90</width>
+            <height>95</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>95</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border:none;
+	border-image: url(:/skin/images/gold.png);
+}
+QPushButton:hover{
+	border:2px double rgb(41,44,50);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="id" stdset="0">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="blue_label">
+          <property name="geometry">
+           <rect>
+            <x>21</x>
+            <y>81</y>
+            <width>90</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: transparent;
+	font: 12pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string> 天际蓝</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="green_label">
+          <property name="geometry">
+           <rect>
+            <x>126</x>
+            <y>81</y>
+            <width>90</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: transparent;
+	font: 12pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string> 清新绿</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gold_label">
+          <property name="geometry">
+           <rect>
+            <x>231</x>
+            <y>81</y>
+            <width>90</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: transparent;
+	font: 12pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string> 土豪金</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="green_icon">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>81</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:15px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gold_icon">
+          <property name="geometry">
+           <rect>
+            <x>295</x>
+            <y>81</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:15px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="blue_icon">
+          <property name="geometry">
+           <rect>
+            <x>85</x>
+            <y>81</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:15px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>纯色</string>
+      </attribute>
+      <widget class="QWidget" name="widget_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>324</width>
+         <height>104</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="color1_btn">
+        <property name="geometry">
+         <rect>
+          <x>7</x>
+          <y>6</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(255, 92, 138);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color2_btn">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>6</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(239, 122, 158);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color3_btn">
+        <property name="geometry">
+         <rect>
+          <x>113</x>
+          <y>6</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(254, 118, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color4_btn">
+        <property name="geometry">
+         <rect>
+          <x>166</x>
+          <y>6</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(113, 127, 249);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color5_btn">
+        <property name="geometry">
+         <rect>
+          <x>219</x>
+          <y>6</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(71, 145, 235);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color6_btn">
+        <property name="geometry">
+         <rect>
+          <x>272</x>
+          <y>6</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(57, 175, 234);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color7_btn">
+        <property name="geometry">
+         <rect>
+          <x>7</x>
+          <y>58</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(43, 182, 105);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color8_btn">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>58</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(106, 204, 25);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color9_btn">
+        <property name="geometry">
+         <rect>
+          <x>113</x>
+          <y>58</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(226, 171, 18);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color10_btn">
+        <property name="geometry">
+         <rect>
+          <x>166</x>
+          <y>58</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(255, 143, 87);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color11_btn">
+        <property name="geometry">
+         <rect>
+          <x>219</x>
+          <y>58</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(253, 114, 109);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color12_btn">
+        <property name="geometry">
+         <rect>
+          <x>272</x>
+          <y>58</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(253, 84, 78);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color1_icon">
+        <property name="geometry">
+         <rect>
+          <x>34</x>
+          <y>31</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color2_icon">
+        <property name="geometry">
+         <rect>
+          <x>87</x>
+          <y>31</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color3_icon">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>31</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color4_icon">
+        <property name="geometry">
+         <rect>
+          <x>193</x>
+          <y>31</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color5_icon">
+        <property name="geometry">
+         <rect>
+          <x>246</x>
+          <y>31</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color6_icon">
+        <property name="geometry">
+         <rect>
+          <x>299</x>
+          <y>31</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color7_icon">
+        <property name="geometry">
+         <rect>
+          <x>34</x>
+          <y>83</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color8_icon">
+        <property name="geometry">
+         <rect>
+          <x>87</x>
+          <y>83</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color9_icon">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>83</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color10_icon">
+        <property name="geometry">
+         <rect>
+          <x>193</x>
+          <y>83</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color11_icon">
+        <property name="geometry">
+         <rect>
+          <x>246</x>
+          <y>83</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="color12_icon">
+        <property name="geometry">
+         <rect>
+          <x>299</x>
+          <y>83</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_5" native="true">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>119</y>
+         <width>324</width>
+         <height>104</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>自定义颜色</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="r_slider">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>40</y>
+          <width>240</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::add-page:Horizontal{
+	background-color: rgb(69, 69, 70);
+	height:5px;
+}
+QSlider::sub-page:Horizontal{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));
+	height:5px;
+}
+QSlider::handle:Horizontal{
+	width:10px;
+	margin:-1px -1px;
+}
+QSlider::groove:Horizontal{
+	background:rgb(0, 255, 0);
+	height:5px;
+	padding-left:-3px;
+	padding-right:-3px;
+}</string>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="b_slider">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>80</y>
+          <width>240</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::add-page:Horizontal{
+	background-color: rgb(69, 69, 70);
+	height:5px;
+}
+QSlider::sub-page:Horizontal{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));
+	height:5px;
+}
+QSlider::handle:Horizontal{
+	width:10px;
+	margin:-1px -1px;
+}
+QSlider::groove:Horizontal{
+	background:rgb(0, 255, 0);
+	height:5px;
+	padding-left:-3px;
+	padding-right:-3px;
+}</string>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="g_slider">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>240</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::add-page:Horizontal{
+	background-color: rgb(69, 69, 70);
+	height:5px;
+}
+QSlider::sub-page:Horizontal{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));
+	height:5px;
+}
+QSlider::handle:Horizontal{
+	width:10px;
+	margin:-1px -1px;
+}
+QSlider::groove:Horizontal{
+	background:rgb(0, 255, 0);
+	height:5px;
+	padding-left:-3px;
+	padding-right:-3px;
+}</string>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pane_btn">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>60</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));
+	border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pane_icon">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:transparent;
+	border-radius:10px;
+}
+QPushButton::checked{
+	background-color:white;
+	border-image: url(:/skin/images/colorselect.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../my_images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>color1_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color2_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>126</x>
+     <y>-14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color3_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color4_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color5_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>360</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color6_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>309</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>367</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color7_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color8_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color9_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>367</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color10_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>261</x>
+     <y>-3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color11_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>-7</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color12_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>311</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>r_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>g_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>b_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>black_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_style()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-2</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>red_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_style()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pink_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_style()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>306</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>blue_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_style()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-2</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>green_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_style()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>171</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gold_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_style()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>357</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pane_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>206</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-3</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>change_color()</slot>
+  <slot>change_style()</slot>
+ </slots>
+</ui>

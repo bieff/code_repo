@@ -1,0 +1,180 @@
+<RCC>
+  <qresource prefix="register_background">
+    <file>images/binarycode.jpg</file>
+    <file>images/article.png</file>
+    <file>images/register_background1.jpg</file>
+    <file>images/register_background.jpg</file>
+  </qresource>
+  <qresource prefix="guide">
+    <file>images/article.png</file>
+    <file>images/information.png</file>
+    <file>images/login.png</file>
+    <file>images/mainwindow.png</file>
+    <file>images/management.png</file>
+    <file>images/official.png</file>
+    <file>images/personcard.png</file>
+    <file>images/register.png</file>
+    <file>images/script.png</file>
+    <file>images/skinpic.png</file>
+    <file>images/tablepic.png</file>
+    <file>images/next.png</file>
+    <file>images/pre.png</file>
+  </qresource>
+  <qresource prefix="mainwindow">
+    <file>images/syc.ico</file>
+    <file>images/normal.png</file>
+    <file>images/zhihu.png</file>
+    <file>images/arrow-down.png</file>
+    <file>images/max.png</file>
+    <file>images/minus.png</file>
+    <file>images/setting.png</file>
+    <file>images/skin.png</file>
+    <file>images/exit.png</file>
+    <file>images/our_code.png</file>
+    <file>images/soft_information.png</file>
+    <file>images/today_article.png</file>
+    <file>images/user_guide.png</file>
+    <file>images/account_management.png</file>
+    <file>images/data_analysis.png</file>
+    <file>images/table.png</file>
+    <file>images/sqlscript.png</file>
+  </qresource>
+  <qresource prefix="article">
+    <file>images/article_02.jpg</file>
+    <file>images/article_03.jpg</file>
+    <file>images/article_04.jpg</file>
+    <file>images/article_05.jpg</file>
+    <file>images/article_06.jpg</file>
+    <file>images/article_07.jpg</file>
+    <file>images/article_08.jpg</file>
+    <file>images/article_09.jpg</file>
+    <file>images/article_10.jpg</file>
+    <file>images/article_11.jpg</file>
+    <file>images/article_12.jpg</file>
+    <file>images/article_13.jpg</file>
+    <file>images/article_14.jpg</file>
+    <file>images/article_15.jpg</file>
+    <file>images/article_01.jpg</file>
+    <file>images/article_top.jpg</file>
+  </qresource>
+  <qresource prefix="official">
+    <file>images/qq.png</file>
+    <file>images/wechat.png</file>
+    <file>images/WeChat_public.png</file>
+    <file>images/weibo.png</file>
+    <file>images/wechat_code.jpg</file>
+    <file>images/weixin_code.jpg</file>
+    <file>images/weibo_code.png</file>
+    <file>images/qqqun_code.jpg</file>
+    <file>images/school.png</file>
+  </qresource>
+  <qresource prefix="information">
+    <file>images/syc.ico</file>
+    <file>images/zhihu.png</file>
+    <file>images/Mac.jpg</file>
+    <file>images/Linux.jpg</file>
+    <file>images/Windows.jpg</file>
+  </qresource>
+  <qresource prefix="skin">
+    <file>images/black.jpg</file>
+    <file>images/gold.png</file>
+    <file>images/colorselect.png</file>
+    <file>images/blue.jpg</file>
+    <file>images/green.jpg</file>
+    <file>images/pink.jpg</file>
+    <file>images/red.jpg</file>
+  </qresource>
+  <qresource prefix="samanagement">
+    <file>images/exit.png</file>
+    <file>images/man.png</file>
+  </qresource>
+  <qresource prefix="feedback">
+    <file>images/feedback.png</file>
+    <file>images/close.png</file>
+  </qresource>
+  <qresource prefix="personcard">
+    <file>images/user_level3.png</file>
+    <file>images/money.png</file>
+    <file>images/switch .png</file>
+    <file>images/language.png</file>
+    <file>images/account_icon.png</file>
+    <file>images/bind.png</file>
+    <file>images/guide.png</file>
+    <file>images/logout.png</file>
+    <file>images/qq.png</file>
+    <file>images/wechat.png</file>
+    <file>images/weibo.png</file>
+    <file>images/user_level0.png</file>
+    <file>images/user_level1.png</file>
+    <file>images/user_level2.png</file>
+    <file>images/user_level4.png</file>
+    <file>images/user_level5.png</file>
+    <file>images/user_level6.png</file>
+    <file>images/201601033017.ico</file>
+  </qresource>
+  <qresource prefix="editor">
+    <file>images/select_close.png</file>
+    <file>images/execution.png</file>
+    <file>images/pattern_switch.png</file>
+    <file>images/sqlscript.png</file>
+    <file>images/aligncenter.png</file>
+    <file>images/alignleft.png</file>
+    <file>images/alignright.png</file>
+    <file>images/bold.png</file>
+    <file>images/clear.png</file>
+    <file>images/copy.png</file>
+    <file>images/file.png</file>
+    <file>images/font.png</file>
+    <file>images/font_color.png</file>
+    <file>images/font_size.png</file>
+    <file>images/incline.png</file>
+    <file>images/lower2upper.png</file>
+    <file>images/new_file.png</file>
+    <file>images/open_file.png</file>
+    <file>images/paste.png</file>
+    <file>images/redo.png</file>
+    <file>images/save.png</file>
+    <file>images/shear.png</file>
+    <file>images/underline.png</file>
+    <file>images/undo.png</file>
+    <file>images/upper2lower.png</file>
+  </qresource>
+  <qresource prefix="usermanagement">
+    <file>images/cherry_tree_2.png</file>
+    <file>images/cherry_tree_3.png</file>
+    <file>images/cherry_tree_1.png</file>
+    <file>images/cherry_tree.png</file>
+    <file>code_images/idencode.png</file>
+    <file>images/accountmanage.png</file>
+    <file>images/editEnable.png</file>
+    <file>images/female.png</file>
+    <file>images/male.png</file>
+    <file>images/man.png</file>
+    <file>images/no.png</file>
+    <file>images/woman.png</file>
+    <file>images/yes.png</file>
+  </qresource>
+  <qresource prefix="database">
+    <file>images/edit.png</file>
+    <file>images/add.png</file>
+    <file>images/delete.png</file>
+    <file>images/down.png</file>
+    <file>images/refresh.png</file>
+    <file>images/search.png</file>
+    <file>images/up.png</file>
+  </qresource>
+  <qresource prefix="login">
+    <file>images/view_off.png</file>
+    <file>images/view_on.png</file>
+    <file>images/safe.png</file>
+    <file>images/qq_binarycode.png</file>
+    <file>images/arrow-up.png</file>
+    <file>images/lock.png</file>
+    <file>images/login_top_label.gif</file>
+    <file>images/register_icon.png</file>
+    <file>images/arrow_down.png</file>
+    <file>images/201601033034.ico</file>
+    <file>images/binarycode.jpg</file>
+    <file>images/201601033017.ico</file>
+  </qresource>
+</RCC>

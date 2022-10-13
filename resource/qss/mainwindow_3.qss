@@ -1,0 +1,62 @@
+QWidget#mainwindow_widget{
+    border-bottom:1px solid gray;
+    background-color:rgb(247, 153, 191);
+}
+QWidget#widget_2{
+    border-bottom:1px solid gray;
+}
+QWidget#widget_3{
+    border-bottom:1px solid gray;
+}
+QPushButton#mainicon_btn{
+    border-radius:20px;
+    border:none;
+    border-image: url(:/mainwindow/images/zhihu.png);
+}
+QPushButton#mainname_btn{
+    border:none;
+    font: 75 14pt \"微软雅黑\";
+    color:white;
+}
+QLabel#time_label{
+    font: 75 12pt \"微软雅黑\";
+    color:white;
+}
+QPushButton#userName_btn{
+    border:none;
+    color:white;
+}
+QPushButton#arrow_btn{
+    border:none;
+    border-image: url(:/mainwindow/images/arrow-down.png);
+}
+QPushButton#skin_btn{
+    border-radius:15px;
+    border:none;
+    border-image: url(:/mainwindow/images/skin.png);
+}
+QPushButton#setting_btn{
+    border-radius:15px;
+    border:none;
+    border-image: url(:/mainwindow/images/setting.png);
+}
+QLabel#label{
+    font-size:22px;
+    color:white;
+}
+QPushButton#min_btn{
+    border-image: url(:/mainwindow/images/minus.png);
+}
+QPushButton#max_btn{
+    border-image: url(:/mainwindow/images/max.png);
+}
+QPushButton#close_btn{
+    border-radius:15px;
+    border:none;
+    border-image: url(:/mainwindow/images/exit.png);
+}
+QListWidget#listWidget{
+}
+QStackedWidget#stackedWidget{
+    border-radius:10px;
+}

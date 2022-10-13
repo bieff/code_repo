@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>756</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QPushButton" name="icon_btn">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius:40px;
+	border:none;
+	border-image: url(:/information/images/syc.ico);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="name_label">
+       <property name="minimumSize">
+        <size>
+         <width>650</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	font: 28pt &quot;楷体&quot;;
+	color: rgb(0, 170, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>中药精油靶点数据库</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="version_label">
+       <property name="minimumSize">
+        <size>
+         <width>320</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>当前版本：1.1.0 (Build:20200510)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="check_version_btn">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 10pt &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>检查更新</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="feedback_btn">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 10pt &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>意见反馈</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QRadioButton" name="auto_rbtn">
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	font: 10pt &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>自动更新</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="remain_rbtn">
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	font: 10pt &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>有新版本时提醒我</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="autologin_checkBox">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox{
+	font: 10pt &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>自动登录</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>客户端下载：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="windows_btn">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/information/images/Windows.jpg);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="linux_btn">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/information/images/Linux.jpg);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mac_btn">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/information/images/Mac.jpg);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="official_btn">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border:none;
+	border-bottom:1px solid gray;
+	font: 10pt &quot;微软雅黑&quot;;
+	color:blue;
+}</string>
+       </property>
+       <property name="text">
+        <string>《XXX官网》</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="handbook_btn">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border:none;
+	border-bottom:1px solid gray;
+	font: 10pt &quot;微软雅黑&quot;;
+	color:blue;
+}</string>
+       </property>
+       <property name="text">
+        <string>《用户管理手册》</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="server_btn">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border:none;
+	border-bottom:1px solid gray;
+	font: 10pt &quot;微软雅黑&quot;;
+	color:blue;
+}</string>
+       </property>
+       <property name="text">
+        <string>《服务条款》</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="policy_btn">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border:none;
+	border-bottom:1px solid gray;
+	font: 10pt &quot;微软雅黑&quot;;
+	color:blue;
+}</string>
+       </property>
+       <property name="text">
+        <string>《隐私政策》</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="copyright_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>版权公告：2020-2026 夜晓希声 版权所有  Copyright© 2020Aixili,Inc.All right reserved.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../my_images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>check_version_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>check_version()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>366</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-2</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>feedback_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_feedback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>484</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>754</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>official_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>official_web_link()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>376</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>handbook_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>user_handbook_link()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>376</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>server_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>server_link()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>381</x>
+     <y>376</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>757</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>policy_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>privacy_policy_link()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>507</x>
+     <y>376</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>754</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>autologin_checkBox</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>auto_login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>21</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>check_version()</slot>
+  <slot>show_feedback()</slot>
+  <slot>official_web_link()</slot>
+  <slot>user_handbook_link()</slot>
+  <slot>server_link()</slot>
+  <slot>privacy_policy_link()</slot>
+  <slot>auto_login()</slot>
+ </slots>
+</ui>

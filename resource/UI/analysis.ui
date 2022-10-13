@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,7">
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="4,6">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QComboBox" name="herb_comboBox">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox QAbstractItemView{
+	min-height:30px;
+}</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>请选择中药名称</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="compound_comboBox">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>请选择成分名称</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="submit_btn">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>提交</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="0" colspan="2">
+          <widget class="QComboBox" name="layout_comboBox">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>Circular Layout</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Random Layout</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Shell Layout</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Spring Layout</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton">
+           <property name="minimumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	border-radius:12px;
+	border:none;
+	background-color: rgb(255, 0, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="herb_label">
+           <property name="styleSheet">
+            <string notr="true">QLabel#herb_label{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>中药名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="minimumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	border-radius:12px;
+	border:none;
+	background-color: rgb(255, 255, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="compound_label">
+           <property name="styleSheet">
+            <string notr="true">QLabel#compound_label{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>成分名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="minimumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	border-radius:12px;
+	border:none;
+	background-color: rgb(0, 170, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="target_label">
+           <property name="styleSheet">
+            <string notr="true">QLabel#target_label{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>靶点名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="line_label">
+           <property name="minimumSize">
+            <size>
+             <width>24</width>
+             <height>3</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>24</width>
+             <height>3</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel#line_label{
+	background-color: rgb(0, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="correlation_label">
+           <property name="styleSheet">
+            <string notr="true">QLabel#correlation_label{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>属性关联</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>herb_comboBox</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>herb_selected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>compound_comboBox</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>compound_selected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>24</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-3</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>submit_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>submit_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>layout_comboBox</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>change_layout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>herb_selected()</slot>
+  <slot>compound_selected()</slot>
+  <slot>target_selected()</slot>
+  <slot>entry_selected()</slot>
+  <slot>submit_clicked()</slot>
+  <slot>change_layout()</slot>
+ </slots>
+</ui>

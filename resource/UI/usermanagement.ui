@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,10">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QPushButton" name="account_ad_btn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>120</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font-size:16px;
+	border:none;
+	border-bottom:2px solid gray;
+}</string>
+      </property>
+      <property name="text">
+       <string>账号管理</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../my_images.qrc">
+        <normaloff>:/usermanagement/images/accountmanage.png</normaloff>:/usermanagement/images/accountmanage.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>75</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTabWidget::pane#tabWidget{
+	border-top:2px solid #00C2C7CB;
+	position:absolute;
+	top:10px;
+	background:#002d2f33;
+}
+QTabWidget#tabWidget::tab-bar{
+	alginment:center;
+}
+QTabBar::tab {
+	background: #00000000;
+	border: none;
+	border-bottom-color: #dcdde4;
+	min-width: 10px;
+	margin-right: 20px;
+    padding-left:20px;
+	padding-right:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	color:#686a6e;
+}
+QTabBar::tab:hover {
+	background: #BEDAFA;
+}
+QTabBar::tab:selected {
+	border-color: #F8F7F2;
+	color:black;
+	border-bottom: 2px solid #3c3e42;
+}</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="tabsClosable">
+         <bool>false</bool>
+        </property>
+        <property name="movable">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="userIfo">
+         <property name="styleSheet">
+          <string notr="true">QWidget#userIfo{
+	border-image: url(:/usermanagement/images/cherry_tree_3.png);
+}</string>
+         </property>
+         <attribute name="title">
+          <string>基本信息</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="6,4">
+          <item>
+           <widget class="QWidget" name="widget_3" native="true">
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="2" column="0">
+              <widget class="QLabel" name="email_label">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>邮箱：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1" colspan="3">
+              <widget class="QTextEdit" name="introduce_textEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QTextEdit{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="3">
+              <widget class="QLineEdit" name="name_lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1" colspan="3">
+              <widget class="QLineEdit" name="email_lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="sex_label">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>性别：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1" colspan="2">
+              <widget class="QPushButton" name="save_btn">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>保存</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="introduce__label">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>简介：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3">
+              <widget class="QPushButton" name="cancel_btn">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>取消</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="account_label">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>账号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="name_label">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>昵称：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QRadioButton" name="woman_rbtn">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../my_images.qrc">
+                 <normaloff>:/usermanagement/images/male.png</normaloff>:/usermanagement/images/male.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4">
+              <widget class="QPushButton" name="edit_name_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>90</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	border:none;
+	border-bottom:1px solid lightblue;
+}
+QPushButton:hover{
+	border-bottom:2px solid blue;
+}</string>
+               </property>
+               <property name="text">
+                <string>修改</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../my_images.qrc">
+                 <normaloff>:/usermanagement/images/editEnable.png</normaloff>:/usermanagement/images/editEnable.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="4">
+              <widget class="QPushButton" name="edit_email_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>90</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	border:none;
+	border-bottom:1px solid lightblue;
+}
+QPushButton:hover{
+	border-bottom:2px solid blue;
+}</string>
+               </property>
+               <property name="text">
+                <string>修改</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../my_images.qrc">
+                 <normaloff>:/usermanagement/images/editEnable.png</normaloff>:/usermanagement/images/editEnable.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QRadioButton" name="man_rbtn">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../my_images.qrc">
+                 <normaloff>:/usermanagement/images/female.png</normaloff>:/usermanagement/images/female.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" colspan="3">
+              <widget class="QLineEdit" name="account_lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_4" native="true">
+            <widget class="QLabel" name="headimage_label">
+             <property name="geometry">
+              <rect>
+               <x>70</x>
+               <y>40</y>
+               <width>150</width>
+               <height>150</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	border-image:url(:/usermanagement/images/man.png);
+	background-color: rgb(186, 186, 186);
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="edit_headimage_btn">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>200</y>
+               <width>75</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+             </property>
+             <property name="text">
+              <string>修改头像</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="pwdAd">
+         <property name="styleSheet">
+          <string notr="true">QWidget#pwdAd{
+	border-image: url(:/usermanagement/images/cherry_tree.png);
+}</string>
+         </property>
+         <attribute name="title">
+          <string>密码管理</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="7,3">
+          <item>
+           <widget class="QWidget" name="widget_5" native="true">
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QLabel" name="pwd_labe">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>原密码：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" colspan="2">
+              <widget class="QLineEdit" name="pwd_lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pwd_show_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4" colspan="2">
+              <widget class="QLabel" name="pwd_error_label">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="newpwd_label">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>新密码：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="2">
+              <widget class="QLineEdit" name="newpwd_lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="echoMode">
+                <enum>QLineEdit::Password</enum>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QPushButton" name="newpwd_show_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4" colspan="2">
+              <widget class="QLabel" name="newpwd_error_label">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="confirm_label">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>确认新密码：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1" colspan="2">
+              <widget class="QLineEdit" name="confirm_lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="echoMode">
+                <enum>QLineEdit::Password</enum>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QPushButton" name="confirm_show_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="4" colspan="2">
+              <widget class="QLabel" name="confirm_error_label">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="code_label">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>验证码：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1" colspan="2">
+              <widget class="QLineEdit" name="code_lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3" colspan="2">
+              <widget class="QPushButton" name="code_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="5">
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>191</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="4" column="1">
+              <widget class="QPushButton" name="changeIfo_btn">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>保存</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QPushButton" name="cancel_btn_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>取消</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_6" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="login_record">
+         <attribute name="title">
+          <string>登录日志</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_4" stretch="10">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_11" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QTableWidget" name="login_record_tableWidget">
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::NoSelection</enum>
+               </property>
+               <column>
+                <property name="text">
+                 <string>登录账号</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>登陆时间</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>IP地址</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>操作系统</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>计算机名称</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="work_record">
+         <property name="styleSheet">
+          <string notr="true">QWidget#work_record{
+	border-image: url(:/usermanagement/images/cherry_tree_1.png);
+}</string>
+         </property>
+         <attribute name="title">
+          <string>工作日志</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <property name="topMargin">
+             <number>120</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="close_query_btn_">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	font-size: 12pt;
+	font-family: 微软雅黑,宋体;
+}</string>
+              </property>
+              <property name="text">
+               <string>关闭</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="query_btn">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	font-size: 12pt;
+	font-family: 微软雅黑,宋体;
+}</string>
+              </property>
+              <property name="text">
+               <string>查询</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="sqllog_textEdit">
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+	font: 10pt &quot;微软雅黑&quot;;
+}</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="next_work">
+         <property name="styleSheet">
+          <string notr="true">QWidget#next_work{
+	border-image: url(:/usermanagement/images/cherry_tree_2.png);
+}</string>
+         </property>
+         <attribute name="title">
+          <string>我的日程</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,8,1">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_7" native="true"/>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_8" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QCalendarWidget" name="calendarWidget">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="gridVisible">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_9" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../my_images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>save_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_user_inf()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>edit_headimage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_user_headimage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>772</x>
+     <y>294</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>edit_name_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>username_editable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>383</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>402</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>edit_email_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>useremail_editable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>456</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>code_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_code()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>340</x>
+     <y>456</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>changeIfo_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_pwd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>476</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancel_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>cancel_change_pwd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>234</x>
+     <y>482</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancel_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>cancel_change_ifo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>387</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>name_lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>change_ifo_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>email_lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>change_ifo_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>114</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>man_rbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_ifo_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>301</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>woman_rbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_ifo_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pwd_lineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Form</receiver>
+   <slot>change_pwd_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>158</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newpwd_lineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Form</receiver>
+   <slot>change_pwd_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>confirm_lineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Form</receiver>
+   <slot>change_pwd_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-7</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>code_lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>change_pwd_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-2</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>introduce_textEdit</sender>
+   <signal>textChanged()</signal>
+   <receiver>Form</receiver>
+   <slot>change_ifo_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>213</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>210</x>
+     <y>466</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>query_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>query_sqllog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-23</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>close_query_btn_</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close_sqllog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>406</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-10</x>
+     <y>402</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>change_user_inf()</slot>
+  <slot>change_user_headimage()</slot>
+  <slot>username_editable()</slot>
+  <slot>useremail_editable()</slot>
+  <slot>change_pwd_enable()</slot>
+  <slot>change_code()</slot>
+  <slot>change_pwd()</slot>
+  <slot>cancel_change_pwd()</slot>
+  <slot>cancel_change_ifo()</slot>
+  <slot>change_ifo_enable()</slot>
+  <slot>query_sqllog()</slot>
+  <slot>close_sqllog()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>312</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="8" column="0">
+       <widget class="QPushButton" name="help_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	text-align:left;
+	padding-left:20px;
+}
+QPushButton::hover{
+	background-color: rgb(202, 202, 202);
+}
+QPushButton::pressed{
+	background-color: rgb(159, 159, 159);
+}</string>
+        </property>
+        <property name="text">
+         <string>使用帮助</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/personcard/images/guide.png</normaloff>:/personcard/images/guide.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="line2_label">
+        <property name="minimumSize">
+         <size>
+          <width>312</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>312</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	background-color: rgb(202, 202, 202);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="spacing">
+           <number>50</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="grade_btn">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#grade_btn{
+	border:none;
+	border-image: url(:/personcard/images/user_level6.png);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="experience_label">
+            <property name="minimumSize">
+             <size>
+              <width>180</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>180</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>经验值：999999/10000000</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="experience_progressBar">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>6</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>6</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QProgressBar{
+	border: 1px solid lightgray;
+	border-radius:5px;
+	background-color:rgb(255, 255, 255);
+}
+
+QProgressBar::chunk{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));
+}
+
+</string>
+          </property>
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+          <property name="value">
+           <number>666</number>
+          </property>
+          <property name="textVisible">
+           <bool>false</bool>
+          </property>
+          <property name="format">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="line1_label">
+        <property name="minimumSize">
+         <size>
+          <width>312</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>312</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	background-color: rgb(202, 202, 202);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QPushButton" name="switch_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	text-align:left;
+	padding-left:20px;
+}
+QPushButton::hover{
+	background-color: rgb(202, 202, 202);
+}
+QPushButton::pressed{
+	background-color: rgb(159, 159, 159);
+}</string>
+        </property>
+        <property name="text">
+         <string>切换账号</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/personcard/images/switch .png</normaloff>:/personcard/images/switch .png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QPushButton" name="logout_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	text-align:left;
+	padding-left:20px;
+}
+QPushButton::hover{
+	background-color: rgb(202, 202, 202);
+}
+QPushButton::pressed{
+	background-color: rgb(159, 159, 159);
+}</string>
+        </property>
+        <property name="text">
+         <string>退出登录</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/personcard/images/logout.png</normaloff>:/personcard/images/logout.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="touxiang_btn">
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#touxiang_btn{
+	border-radius:25px;
+	border-image: url(:/personcard/images/201601033017.ico);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="username_label">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>夜晓希声</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="sign_btn">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>签到</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../my_images.qrc">
+            <normaloff>:/personcard/images/money.png</normaloff>:/personcard/images/money.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="line3_label">
+        <property name="minimumSize">
+         <size>
+          <width>312</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>312</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	background-color: rgb(202, 202, 202);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="line4_label">
+        <property name="minimumSize">
+         <size>
+          <width>312</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>312</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	background-color: rgb(202, 202, 202);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="accountad_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	text-align:left;
+	padding-left:20px;
+}
+QPushButton::hover{
+	background-color: rgb(202, 202, 202);
+}
+QPushButton::pressed{
+	background-color: rgb(159, 159, 159);
+}</string>
+        </property>
+        <property name="text">
+         <string>账号中心</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/personcard/images/account_icon.png</normaloff>:/personcard/images/account_icon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="bind_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	text-align:left;
+	padding-left:20px;
+}
+QPushButton::hover{
+	background-color: rgb(202, 202, 202);
+}
+QPushButton::pressed{
+	background-color: rgb(159, 159, 159);
+}</string>
+        </property>
+        <property name="text">
+         <string>社交账号</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/personcard/images/bind.png</normaloff>:/personcard/images/bind.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="language_btn">
+        <property name="minimumSize">
+         <size>
+          <width>312</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>312</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	text-align:left;
+	padding-left:20px;
+}
+QPushButton::hover{
+	background-color: rgb(202, 202, 202);
+}
+QPushButton::pressed{
+	background-color: rgb(159, 159, 159);
+}</string>
+        </property>
+        <property name="text">
+         <string>语言设置</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../my_images.qrc">
+          <normaloff>:/personcard/images/language.png</normaloff>:/personcard/images/language.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionCN">
+   <property name="text">
+    <string>CN</string>
+   </property>
+   <property name="toolTip">
+    <string>中文</string>
+   </property>
+  </action>
+  <action name="actionEN">
+   <property name="text">
+    <string>EN</string>
+   </property>
+   <property name="toolTip">
+    <string>英文</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../my_images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>touxiang_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_usermanagement_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-23</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sign_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>sign_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>256</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>accountad_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_usermanagement_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>3</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-24</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>help_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_guide_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>5</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-7</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>switch_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>switch_account()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>3</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>logout_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>logout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>4</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>380</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bind_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>bind_other()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-9</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>language_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_language_menu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>21</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>253</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_usermanagement_pane()</slot>
+  <slot>sign_click()</slot>
+  <slot>bind_other()</slot>
+  <slot>show_guide_pane()</slot>
+  <slot>switch_account()</slot>
+  <slot>logout()</slot>
+  <slot>slider_animation()</slot>
+  <slot>show_language_menu()</slot>
+ </slots>
+</ui>
